@@ -693,7 +693,15 @@ const PASSWORD = "0508";
 const RELATIONSHIP_START = new Date(2025, 7, 5, 0, 0, 0); // 5 de agosto de 2025
 const NEXT_ADVENTURE_DATE = new Date(2026, 11, 24, 0, 0, 0); // edite livremente
 
-const PHOTOS = Array.from({length:9}, (_,i)=>`https://picsum.photos/seed/amor${i+1}/${600 + (i%3)*40}/${750 + (i%4)*60}`);
+const PHOTOS = [
+  "1D33AF78-3053-4E15-AC02-32F4E01FC5CC.jpeg",
+  "C11DFFC5-AAF4-484D-A7E8-EC21BD848C31.jpeg",
+  "IMG_4720.jpeg",
+  "IMG_4732.jpeg",
+  "IMG_5674.jpeg",
+  "IMG_6176.jpeg",
+  "IMG_8369.jpeg"
+];
 
 const LOVE_NOTES = [
   "Eu ainda me lembro da primeira vez que te vi…",
@@ -705,13 +713,14 @@ const LOVE_NOTES = [
 ];
 
 const MEMORIES = [
-  {img:PHOTOS[0], date:"Mais um capítulo da nossa história."},
-  {img:PHOTOS[1], date:"Esse dia, guardado para sempre."}, 
-  {img:PHOTOS[2], date:"Um momento nosso, entre tantos outros."},
-  {img:PHOTOS[3], date:"Aqui, só nós dois.},
-  {img:PHOTOS[4], date:"Simplesmente feliz ao seu lado."},
-  {img:PHOTOS[5], date:"Um pedacinho do nosso tempo juntos."}
+  {img:PHOTOS[0], date:"Um dia qualquer", title:"Mais um capítulo da nossa história."},
+  {img:PHOTOS[1], date:"Aquele fim de semana", title:"Esse dia, guardado para sempre."},
+  {img:PHOTOS[2], date:"Uma tarde de sol", title:"Um momento nosso, entre tantos outros."},
+  {img:PHOTOS[3], date:"Sem hora marcada", title:"Aqui, só nós dois."},
+  {img:PHOTOS[4], date:"Data especial", title:"Simplesmente feliz ao seu lado."},
+  {img:PHOTOS[5], date:"Um dia qualquer", title:"Um pedacinho do nosso tempo juntos."}
 ];
+
 
 const REASONS = [
   "Eu amo o seu sorriso.","Eu amo como me sinto seguro(a) com você.","Eu amo a sua bondade.",
